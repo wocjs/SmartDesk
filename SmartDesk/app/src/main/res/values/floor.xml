@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="floor">
+        <item><b><font size="15">2층</font></b></item>
+        <item><b><font size="15">3층</font></b></item>
+        <item><b><font size="15">4층 </font></b></item>
+    </string-array>
+</resources>

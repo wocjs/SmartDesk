@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home_24px"
+        android:title="@string/navi_name_home"
+        android:iconTint="@color/navi_dark_gray" />
+
+    <item
+        android:id="@+id/navigation_seat"
+        android:icon="@drawable/ic_chair_24px"
+        android:title="@string/navi_name_seat"
+        android:iconTint="@color/navi_dark_gray" />
+
+    <item
+        android:id="@+id/navigation_calendar"
+        android:icon="@drawable/ic_calendar_month_24px"
+        android:title="@string/navi_name_calendar"
+        android:iconTint="@color/navi_dark_gray"/>
+
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/ic_person_24px"
+        android:title="@string/navi_name_profile"
+        android:iconTint="@color/navi_dark_gray" />
+
+</menu>

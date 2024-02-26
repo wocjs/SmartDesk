@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.smartdesk.ui.home.HomeFragment"
+        android:label="@string/navi_name_home"
+        tools:layout="@layout/fragment_home">
+
+        <!--    HomeFragment에서 SeatFragment로 이동하는 액션 정의    -->
+        <action
+            android:id="@+id/action_home_to_seat"
+            app:destination="@id/navigation_seat"
+            app:popUpTo="@id/navigation_home"
+            app:popUpToInclusive="true"/>
+
+        <!--    HomeFragment에서 CalendarFragment로 이동하는 액션 정의    -->
+        <action
+            android:id="@+id/action_home_to_calendar"
+            app:destination="@id/navigation_calendar"
+            app:popUpTo="@id/navigation_home"
+            app:popUpToInclusive="true"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_seat"
+        android:name="com.example.smartdesk.ui.seat.SeatFragment"
+        android:label="@string/navi_name_seat"
+        tools:layout="@layout/fragment_seat">
+
+        <action
+            android:id="@+id/action_seat_to_home"
+            app:destination="@+id/navigation_home"
+            app:popUpTo="@id/navigation_home"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_calendar"
+        android:name="com.example.smartdesk.ui.calendar.CalendarFragment"
+        android:label="@string/navi_name_calendar"
+        tools:layout="@layout/fragment_calendar" />
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.smartdesk.ui.profile.ProfileFragment"
+        android:label="@string/navi_name_profile"
+        tools:layout="@layout/fragment_profile" />
+
+</navigation>
