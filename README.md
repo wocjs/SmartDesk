@@ -52,7 +52,7 @@
 
 ---
 <div align=center><h2> ERD </h2></div>
-![untitled](ERD_0.3.png)
+<img src="/ERD_0.3.png">
 
 ---
 <div align=center><h2> 기술 상세 </h2></div>
